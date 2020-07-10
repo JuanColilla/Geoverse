@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yc1-r8-F8I">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Geoverse-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Geoverse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="370"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gy2-6G-8XR">
+                                <rect key="frame" x="373.5" y="153" width="149" height="64"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="40"/>
+                                <state key="normal" title="JUGAR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UaG-az-7Q3"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="geometry" translatesAutoresizingMaskIntoConstraints="NO" id="l38-9h-4QS">
+                                <rect key="frame" x="398" y="20" width="100" height="100"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="hKz-TO-UEg"/>
+                                    <constraint firstAttribute="width" constant="100" id="se2-p6-UAr"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dn8-6V-qyx" appends="YES" id="Wz0-PD-hIU"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DbW-I3-En1">
+                                <rect key="frame" x="373" y="110" width="150" height="150"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Gop-Cc-iJw"/>
+                                    <constraint firstAttribute="height" constant="150" id="WL8-OV-7IU"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Xuh-10-Gfs" appends="YES" id="zPe-kZ-xNY"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iPu-Kl-l5P">
+                                <rect key="frame" x="60" y="20" width="150" height="150"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="DoJ-YH-4YM"/>
+                                    <constraint firstAttribute="width" constant="150" id="dwf-0D-J6b"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="YqO-cH-3yi" appends="YES" id="G6C-FT-31e"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rXz-nt-mio">
+                                <rect key="frame" x="686" y="20" width="150" height="150"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="N5H-fC-9hy"/>
+                                    <constraint firstAttribute="width" constant="150" id="ucT-Uz-Fhg"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ur7-2r-xHu" appends="YES" id="S1m-6S-O8c"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EN6-mP-dMg">
+                                <rect key="frame" x="60" y="199" width="150" height="150"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="jMv-Iy-i3t"/>
+                                    <constraint firstAttribute="height" constant="150" id="od4-zE-F2L"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="uev-dW-WZd" appends="YES" id="N8L-Yz-QHx"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M3t-l7-t53">
+                                <rect key="frame" x="686" y="199" width="150" height="150"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Jz9-pM-SqJ"/>
+                                    <constraint firstAttribute="width" constant="150" id="Ndr-Os-E56"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="qsJ-jP-ZRP" appends="YES" id="drE-Tk-MjY"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIGURA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiF-PU-zL6">
+                                <rect key="frame" x="373" y="301" width="150" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Ot1-cG-5TD"/>
+                                    <constraint firstAttribute="height" constant="48" id="nUx-99-38r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="EN6-mP-dMg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="08D-Fd-z4S"/>
+                            <constraint firstItem="Gy2-6G-8XR" firstAttribute="top" secondItem="l38-9h-4QS" secondAttribute="bottom" constant="33" id="4fD-SK-V9O"/>
+                            <constraint firstItem="iPu-Kl-l5P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7zo-Hf-G56"/>
+                            <constraint firstItem="aiF-PU-zL6" firstAttribute="top" secondItem="DbW-I3-En1" secondAttribute="bottom" constant="41" id="8f1-nj-XZB"/>
+                            <constraint firstItem="DbW-I3-En1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8fr-rN-30m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M3t-l7-t53" secondAttribute="bottom" id="Ffd-Yk-hAk"/>
+                            <constraint firstItem="aiF-PU-zL6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R5D-y0-3Dh"/>
+                            <constraint firstItem="DbW-I3-En1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TZd-W9-6bD"/>
+                            <constraint firstItem="iPu-Kl-l5P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="eTX-Zi-60A"/>
+                            <constraint firstItem="l38-9h-4QS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hQi-M7-jaw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M3t-l7-t53" secondAttribute="trailing" constant="16" id="i9o-0q-MNM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EN6-mP-dMg" secondAttribute="bottom" id="iac-5b-VfR"/>
+                            <constraint firstItem="l38-9h-4QS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ish-Fx-tqd"/>
+                            <constraint firstItem="rXz-nt-mio" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="mH2-pq-x0y"/>
+                            <constraint firstItem="Gy2-6G-8XR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pg8-CF-rMv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rXz-nt-mio" secondAttribute="trailing" constant="16" id="qyt-Ix-AmL"/>
+                            <constraint firstItem="Gy2-6G-8XR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rrz-nQ-h2K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="iKS-ni-Esj" appends="YES" id="zrg-Oo-CMb"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Geoverse" id="CA4-en-VjZ">
+                        <barButtonItem key="rightBarButtonItem" image="play.fill" catalog="system" style="done" id="w2G-U9-zyP">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="muteButton:" destination="BYZ-38-t0r" id="Sq7-qO-917"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="figureLabel" destination="aiF-PU-zL6" id="dJa-2S-sGO"/>
+                        <outlet property="geoverseIcon" destination="l38-9h-4QS" id="zNd-I2-WzA"/>
+                        <outlet property="muteButton" destination="w2G-U9-zyP" id="fMM-rf-3ZN"/>
+                        <outlet property="playButton" destination="Gy2-6G-8XR" id="TVp-N8-H3y"/>
+                        <outletCollection property="imageViews" destination="iPu-Kl-l5P" collectionClass="NSMutableArray" id="gzR-tD-Z3H"/>
+                        <outletCollection property="imageViews" destination="rXz-nt-mio" collectionClass="NSMutableArray" id="McY-iF-3QZ"/>
+                        <outletCollection property="imageViews" destination="DbW-I3-En1" collectionClass="NSMutableArray" id="ONq-3P-2Ir"/>
+                        <outletCollection property="imageViews" destination="EN6-mP-dMg" collectionClass="NSMutableArray" id="4RQ-HI-u0z"/>
+                        <outletCollection property="imageViews" destination="M3t-l7-t53" collectionClass="NSMutableArray" id="l6i-7r-AGU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="YqO-cH-3yi" userLabel="tapTopLeft">
+                    <connections>
+                        <action selector="tapGesture:" destination="BYZ-38-t0r" id="Xft-Tj-BBW"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ur7-2r-xHu" userLabel="tapTopRight">
+                    <connections>
+                        <action selector="tapGesture:" destination="BYZ-38-t0r" id="yu6-EQ-Kip"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Xuh-10-Gfs" userLabel="tapCenter">
+                    <connections>
+                        <action selector="tapGesture:" destination="BYZ-38-t0r" id="hqV-SE-wPW"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="uev-dW-WZd" userLabel="tapBottomLeft">
+                    <connections>
+                        <action selector="tapGesture:" destination="BYZ-38-t0r" id="RHS-Sy-2Nl"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="qsJ-jP-ZRP" userLabel="tapBottomRight">
+                    <connections>
+                        <action selector="tapGesture:" destination="BYZ-38-t0r" id="NA0-Ba-2rN"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <rotationGestureRecognizer id="iKS-ni-Esj" userLabel="rotateGesture">
+                    <connections>
+                        <action selector="rotateGesture:" destination="BYZ-38-t0r" id="ph5-wN-dB9"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="dn8-6V-qyx" userLabel="swipeDownGesture">
+                    <connections>
+                        <action selector="swipeDownGesture:" destination="BYZ-38-t0r" id="TGA-4f-6IU"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1045.9821428571429" y="127.53623188405798"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XOJ-gv-XpL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yc1-r8-F8I" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="ZZz-Cl-u2C">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Jca-1K-cfM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E7J-zG-PeU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="geometry" width="163" height="135"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+    </resources>
+</document>
